@@ -4,7 +4,7 @@ set -euo pipefail
 PORT="${2}"
 CONNECTION="${3}"
 DIR="/tmp/action-google-cloud-sql-proxy"
-IMAGE="gcr.io/cloudsql-docker/gce-proxy:${1}"
+IMAGE="gcr.io/cloud-sql-connectors/cloud-sql-proxy:${1}"
 
 # start container
 docker run \
